@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "author": "Lukeines12 (Lemos) — ELE2IT SENAI",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-devkit-c-v4",
+      "id": "esp",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd",
+      "top": -160,
+      "left": 260,
+      "attrs": { "pins": "full" }
+    },
+    {
+      "type": "wokwi-membrane-keypad",
+      "id": "keypad",
+      "top": 80,
+      "left": 280,
+      "attrs": { "columns": "4" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": -120,
+      "left": 240,
+      "attrs": { "value": "220" }
+    }
+  ],
+  "connections": [
+    ["esp:GND.1", "lcd:VSS", "black",  []],
+    ["esp:3V3",   "lcd:VDD", "red",    []],
+    ["esp:GND.1", "r1:1",    "black",  []],
+    ["r1:2",      "lcd:V0",  "gray",   []],
+    ["esp:19",    "lcd:RS",  "green",  []],
+    ["esp:GND.1", "lcd:RW",  "black",  []],
+    ["esp:18",    "lcd:EN",  "yellow", []],
+    ["esp:5",     "lcd:D4",  "orange", []],
+    ["esp:17",    "lcd:D5",  "blue",   []],
+    ["esp:16",    "lcd:D6",  "purple", []],
+    ["esp:4",     "lcd:D7",  "brown",  []],
+    ["esp:3V3",   "lcd:A",   "red",    []],
+    ["esp:GND.1", "lcd:K",   "black",  []],
+
+    ["esp:13",    "keypad:R1", "red",    []],
+    ["esp:12",    "keypad:R2", "orange", []],
+    ["esp:14",    "keypad:R3", "yellow", []],
+    ["esp:27",    "keypad:R4", "green",  []],
+    ["esp:26",    "keypad:C1", "blue",   []],
+    ["esp:25",    "keypad:C2", "purple", []],
+    ["esp:33",    "keypad:C3", "brown",  []],
+    ["esp:32",    "keypad:C4", "gray",   []]
+  ],
+  "dependencies": {}
+}

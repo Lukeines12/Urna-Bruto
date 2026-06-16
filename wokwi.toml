@@ -1,0 +1,4 @@
+[wokwi]
+version = 1
+elf = "build/urna_eletronica.elf"
+firmware = "build/urna_eletronica.bin"
