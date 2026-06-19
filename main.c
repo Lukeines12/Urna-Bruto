@@ -37,8 +37,8 @@ static const char *TAG = "URNA";
 #define WIFI_PASSWORD  "Internekeines#1010"
 
 /* ─── Wegnology ──────────────────────────────────────── */
-#define WEGNOLOGY_DEVICE_ID  "SEU_DEVICE_ID"
-#define WEGNOLOGY_ACCESS_KEY "SUA_ACCESS_KEY"
+#define WEGNOLOGY_DEVICE_ID  "6a0f08d50016cc5247af557d"
+#define WEGNOLOGY_ACCESS_KEY "0c05c13e-971b-4a65-833c-6e63fa07a172"
 #define WEGNOLOGY_URL        "https://api.app.wnology.io/applications/" \
                              WEGNOLOGY_DEVICE_ID "/devices/" \
                              WEGNOLOGY_DEVICE_ID "/state"
